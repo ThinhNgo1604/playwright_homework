@@ -1,7 +1,7 @@
 import pytest
 from playwright.sync_api import sync_playwright
 
-@pytest.fixture
+@pytest.fixture(scope="session")
 def custom_page():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=False, slow_mo=1000)
