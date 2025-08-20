@@ -5,8 +5,8 @@ def browser_context_args(browser_context_args):
     return {
         **browser_context_args,
        "viewport": {
-            "width": 414,
-            "height": 715,
+            "width": 1000,
+            "height": 1000,
         },
         "ignore_https_errors": True,
     }
