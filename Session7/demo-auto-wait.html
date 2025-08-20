@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auto-wait Demo</title>
+  <script>
+    // Sau 5 giây thì enable nút
+    function enableButton() {
+      setTimeout(() => {
+        document.getElementById("submit").disabled = false;
+        document.getElementById("status").innerText = "Button is now enabled!";
+      }, 5000);
+    }
+    window.onload = enableButton;
+  </script>
+</head>
+<body>
+  <h2>Auto-wait Example</h2>
+  <button id="submit" disabled>Submit</button>
+  <p id="status">Button is disabled...</p>
+</body>
+</html>

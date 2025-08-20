@@ -1,0 +1,11 @@
+<body>
+  <button id="target">Click Me</button>
+  <div id="overlay" style="
+    position:absolute; top:0; left:0; width:100%; height:100%;
+    background:rgba(0,0,0,0.5);"></div>
+
+  <script>
+    // 4 giây sau overlay biến mất
+    setTimeout(() => document.getElementById("overlay").remove(), 4000);
+  </script>
+</body>
